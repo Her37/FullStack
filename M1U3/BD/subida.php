@@ -3,7 +3,7 @@
 $host= "localhost";
 $usuario = "root";
 $clave = "";
-$bd = "formulario";
+$bd = "fullstack";
 
 $conexion = mysqli_connect($host, $usuario,$clave,$bd)
 or die(mysqli_error($mysquli));
