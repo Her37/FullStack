@@ -1,0 +1,77 @@
+body {
+
+    background-image: url(mechanical-engineering-drawings-blue-background-reducer-technical-design-cover-blueprint_101002-309.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+head {
+    text-align: center;
+}
+
+p {
+    font-family: arial;
+    text-align: justify;
+    font-size: 20px;
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+}
+
+
+
+h1 {
+    text-align: center;
+    font-size: 100px;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 0%;
+}
+
+h2 {
+
+
+    font-family: arial;
+}
+
+ul {
+
+    font-style:italic ;
+
+}
+
+ol {
+    font-style:italic ;
+
+}
+
+.foto img {
+
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.foto {
+
+    border: 5px solid #73AD21;
+
+    margin: auto;
+
+    padding: 10px;
+
+    width: 500px;
+
+    height: 280px;
+
+}
+
+#datos {
+    font-size: 120%;
+    margin-top: 10px;
+    margin-left: 300px;
+
+}
