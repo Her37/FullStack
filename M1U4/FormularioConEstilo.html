@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!--Dentro de este Formulario nos conectamos con Mysql para cargar los datos enviados, es un localhost--> 
+<body>
+    <form action="http://localhost/DiplomaturaFullStack/M1U3/BD/subida.php" method="post">
+        <div>
+            <p>
+                <label for="Nombre">Nombre</label>
+                <input type="text" name="Nombre" />
+            </p>
+            <p>
+                <label for="Apellido">Apellido</label>
+                <input type="text" name="Apellido" />
+            </p>
+            <p>
+                <label for="Telefono">Telefono</label>
+                <input type="text" name="Telefono" />
+            </p>
+            <p><label for="comentarios">Comentarios</label>
+                <textarea name="comentarios" id="" cols="30" rows="10"></textarea>
+            </p>
+            <p><input type="submit" value="Enviar"></p>
+            <p><input type="reset" value="Borrar"></p>
+        </div>
+
+    </form>
+</body>
+
+</html>
