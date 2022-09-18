@@ -5,30 +5,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulario</title>
+    <link rel="stylesheet" href="C:\wamp\www\FullStack\M1U4\EstilosparaFormulario.css">
 </head>
-<!--Dentro de este Formulario nos conectamos con Mysql para cargar los datos enviados, es un localhost--> 
+<!--Dentro de este Formulario nos conectamos con Mysql para cargar los datos enviados, es un localhost-->
+
 <body>
-    <form action="http://localhost/DiplomaturaFullStack/M1U3/BD/subida.php" method="post">
-        <div>
-            <p>
-                <label for="Nombre">Nombre</label>
-                <input type="text" name="Nombre" />
-            </p>
-            <p>
-                <label for="Apellido">Apellido</label>
-                <input type="text" name="Apellido" />
-            </p>
-            <p>
-                <label for="Telefono">Telefono</label>
-                <input type="text" name="Telefono" />
-            </p>
-            <p><label for="comentarios">Comentarios</label>
-                <textarea name="comentarios" id="" cols="30" rows="10"></textarea>
-            </p>
-            <p><input type="submit" value="Enviar"></p>
-            <p><input type="reset" value="Borrar"></p>
-        </div>
+
+    <h1>FORMULARIO DE CONTACTO</h1>
+
+    <div class="recuadro">
+
+        <form action="http://localhost/FullStack/M1U3/BD/subida.php" method="post" autocomplete="on">
+
+                <input type="text" id= "nom" name="Nombre" placeholder="Nombre" size="55" maxlength="40" /><br><br>
+
+                <input type="text" id="ape" name="Apellido" placeholder="Apellido" size="55" maxlength="40" /><br><br>
+                
+                <input type="text" id="tel" name="Telefono" placeholder="Telefono" size="55" maxlength="40" /><br><br>
+  
+            <textarea name="comentarios" id="com" cols="50" rows="10" placeholder="Comentarios" style="width:400px; height:200px;"></textarea><br><br>
+
+            <input type="submit" name="Enviar" value="Enviar" onclick="alert('Tus datos fueron cargados en una base de datos en phpMyadmin')">
+            <input type="reset" value="Borrar" onclick="alert('Todo Limpio!')" >
+    </div>
 
     </form>
 </body>
