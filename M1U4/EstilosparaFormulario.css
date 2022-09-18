@@ -14,7 +14,7 @@ h1 {
 }
 form{
 
-    background-color: red;
+    background-color: rgb(162, 255, 0);
 }
 .recuadro {
     text-align: center;
@@ -30,6 +30,6 @@ form{
 
 input {
 
-    background-color: blue;
+    background-color: rgb(244, 246, 247);
 }
 
