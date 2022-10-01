@@ -1,0 +1,30 @@
+#contenedor {
+    /*primero defino las medidas del contenedor*/
+    height: 200px;
+    width: 100%;
+    /*segundo sus bordes*/
+    border-width: 1px;
+    border-style: solid;
+    /*su ubicacion*/
+    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    /*modifico las propiedades flexbox*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.caja {
+    /*defino las medidas de la caja*/
+    height: 200px;
+    width: 200px;
+    /*su ubicacion relativa al contenedor*/
+    position: relative;
+    /* modifico las propiedades flexbox*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*cambio el color de la letra*/
+    color: aliceblue;
+}
