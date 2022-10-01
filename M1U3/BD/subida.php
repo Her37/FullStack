@@ -26,6 +26,7 @@ if (isset($_POST['Enviar'])) {
 	}
 }
 
+
 if ($resultado) {
 ?>
 	<h3>Te has inscripto correctamente!!</h3>
