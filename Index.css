@@ -1,0 +1,23 @@
+.logo{
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.carrusel{
+    display: flex;
+    justify-content: space-between;
+    border: auto;
+
+}
+
+.logo h1{
+    padding-left: 50px;
+}
+
+.descripcion{
+    border: 2px solid #090909;
+    height: 400px;
+
+}
