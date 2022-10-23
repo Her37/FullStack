@@ -3,25 +3,18 @@
     height: 600px;
     width: 600px;
     /*segundo sus bordes*/
-    border-width: 1px;
-    border-style: solid;
-    /*su ubicacion*/
-    margin: 200px;
-    margin-left: auto;
-    margin-right: auto;
+    border: 1px solid black ;
+    /*sus margenes*/
+    margin: 200px auto;
     /*modifico las propiedades flexbox*/
     display: flex;
+    align-items: flex-end;
     flex-direction: column;
-
 }
-
 .caja {
     /*defino las medidas de la caja*/
     height: 200px;
     width: 200px;
-    /*su ubicacion relativa al contenedor*/
-    position: relative;
-    left: 400px;
     /* modifico las propiedades flexbox*/
     display: flex;
     justify-content: center;

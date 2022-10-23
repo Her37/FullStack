@@ -1,17 +1,13 @@
 #contenedor {
-    /*primero defino las medidas del contenedor*/
-    height: 200px;
-    width: 100%;
+    /*primero defino las medidas del contenedor*
+    
     /*segundo sus bordes*/
-    border-width: 1px;
-    border-style: solid;
-    /*su ubicacion*/
-    margin: auto;
-    margin-left: auto;
-    margin-right: auto;
+    border: 1px solid black;
+    /*sus margenes*/
+    margin: 0 auto;
     /*modifico las propiedades flexbox*/
     display: flex;
-    flex-direction: row;
+    align-items: center;
     justify-content: space-between;
 }
 
@@ -20,7 +16,7 @@
     height: 200px;
     width: 200px;
     /*su ubicacion relativa al contenedor*/
-    position: relative;
+
     /* modifico las propiedades flexbox*/
     display: flex;
     justify-content: center;
