@@ -2,45 +2,46 @@
     background-color: aqua;
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 }
 
 .logo h1 {
     padding-left: 50px;
 }
+.h1{
+   margin-left: 50rem;
+
+}
 
 .carrusel {
-    display: flex;
-    flex-direction: row;
+
     align-items: center;
     border: 2px solid #090909;
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.29);
     border-radius: 25px 25px 25px 25px;
-    margin: 10px;
+    margin: 20px;
+   
+}
 
+.img {
+
+    border-radius: 25px 25px 25px 25px;
+    
 }
 
 .p {
-    display: flex;
-    flex-direction: row;
-    padding: 5px;
-}
-
-.descripcion {
-    border: 2px solid #090909;
+    text-align: justify;
 
 }
 
-img {
-
-    display: flex;
-    flex-direction: row;
-    border-radius: 25px 25px 25px 25px;
-
+.acordion{
+    margin-bottom: 20px;
+    margin-top: 100px;
 }
 
-.contenedor {
-    display: flex;
-    flex-direction: column;
+.formulario{
+    margin-bottom: 20px;
+    margin-top: 200px;
 }
+
 
