@@ -115,3 +115,116 @@ h2 {
     display: block;
 }
 /* fin home */
+
+/* inicio galeria */
+
+
+.carrusel {
+
+    align-items: center;
+    border: 2px solid #090909;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.29);
+    border-radius: 25px 25px 25px 25px;
+    margin: 20px 0px;
+    height: 250px;
+    /* width: auto ; */
+   
+}
+
+.img {
+
+    border-radius: 25px 25px 25px 25px;
+    /* width: 200px ; */
+    
+}
+
+.p {
+    text-align: justify;
+}
+
+#IMG1{
+    /* width: fit-content; */
+}
+
+/* fin galeria */
+
+/* inicio Contacto */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: century;
+}
+
+body {
+    background-color: rgb(253, 253, 253);
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+}
+form{
+
+    background-color: rgb(243, 244, 241);
+}
+.recuadro {
+    text-align: center;
+    background-color: white;
+    /* margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 400px;
+    margin-right: 400px; */
+    padding: 30px;
+    border: 5px solid cornflowerblue;
+
+}
+
+input {
+
+    background-color: rgb(244, 246, 247);
+}
+
+/* fin contacto */
+
+/* inicio nosotros */
+
+.histora p{
+    font-size: 12px;
+}
+
+.personas{
+    display: flex;
+    justify-content: center;
+}
+
+.persona {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 18%;
+    text-align: center;
+    padding: 13px;
+    box-sizing: border-box;
+    margin: 5px;
+}
+
+.persona img{
+    border-radius: 50%;
+    max-width: 60%;
+    box-shadow: 0 0 5px rgba(0,0,0,0,5);
+}
+
+.persona h5, h6{
+margin: 0;
+font-size: 14px;
+color: #2e64a1;
+}
+
+.persona h6 {
+    font-size: 11px;
+    font-style: italic;
+}
+
+.persona p{
+    color: #666;
+    font-size: 10px;
+}

@@ -19,13 +19,14 @@
     border: 2px solid #090909;
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.29);
     border-radius: 25px 25px 25px 25px;
-    margin: 20px;
+    margin: 20px 0px;
    
 }
 
 .img {
 
     border-radius: 25px 25px 25px 25px;
+    
     
 }
 
