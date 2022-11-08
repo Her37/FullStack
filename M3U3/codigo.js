@@ -3,6 +3,7 @@ const lugar = prompt("Ingrese la distancia de su viaje", 'En numeros')
 
 let destino;
 
+//Con else if, el primero en validarse sera el destino correcto, el resto no se ejecutara y pasara al switch.
 if (lugar <= 1000) {
     destino = 1;
 }

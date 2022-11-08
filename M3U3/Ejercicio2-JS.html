@@ -11,36 +11,40 @@
 <body>
 
     <script>
-        let array_1 = [];
-        let array_2 = [];
-        for (let f = 0; f <= 9; f++) {
-            array_1[f] = prompt("Ingrese un numero", '');
-            array_2[f];
-        }
-        console.log(array_1);
-        //document.write(array);
+        //se crean los array
+                var array_1 = [];
         
-
-        for (let f = 0; f <= 9; f++) {
-            let j = 0;
-            for (let i = 0; i <= 9; i++) {
-                if (array_1[f] > array_2[i]) {
-                    j = j + 1;
-
-                    console.log('J:' + j);
-
-                    if (j == 9) {
-                        // document.write(`El numero `+ array_1[f] `es mayor que ` + array_1[i]);
-                        //console.log('El numero mayor del Array es:' + array[f]);
-                        console.log(`El numero  ${array_1[f]} es mayor que   ${array_2[i]}`)
-                    }
+        //el usuario carga 10 dato en el array_1
+                for (let f = 0; f <= 9; f++) {
+                   array_1[f] = parseInt(prompt("Ingrese un numero cualquiera", ''));
+        
+                while (Number.isNaN(array_1[f]))
+                    { array_1[f] = parseInt(prompt("Ingrese un numero", 'ingrese solo numeros')); }
                 }
-            }
+                console.log(array_1);
+            document.write('<h3> El Array es: </h3>' + array_1 + '<br>');
+        
+        //el primer for posiciona al array_1 en el 1er elemetno
+                for (let f = 0; f <= 9; f++) {
+                    let j = 0;
+        
+        //el segundo for vuelve a recorerrer el mismo array pero en cada iteracion realiza la comparacion "mayor que"
+                    for (let i = 0; i <= 9; i++) {
+        
+        //de las comparaciones la variable j se incrementara 
+                        if (array_1[f] > array_1[i]) {
+                            j = j + 1;
+                    }     
+        //si j no es 9, el numero que se esta comparando con los demas es por lo menos menor a otro de su grupo, luego se repite el primer for, se resetea j y se repite el 2do for hasta que un numero valide por lo menos 10 veces el if.
+                            if (j == 9) {
+                                document.write('<h3> El número mayor es: </h3>'  + array_1[f]);
+                                console.log(`El número ${array_1[f]} es el mayor.`);
+                            }
+                        
+                }
         }
-
-
-    </script>
-
+        
+            </script>
 </body>
 
 </html>
