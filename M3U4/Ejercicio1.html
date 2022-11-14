@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercico 1-JS</title>
+</head>
+
+<body>
+    
+    <div style="display: flex;">
+        <div id="rojo" onclick="cambiarFondo(0)"
+            style="background-color: red ; border: 5px solid black;  height: 100px; width: 1000px; color: white; font-size: 30px; justify-content: center; align-items: center; display: flex;">
+            Toca este boton para cambiar el color de fondo
+        </div>
+        <div id="verde" onclick="cambiarFondo(1)"
+            style="background-color: green ; border: 5px solid black; height: 100px; width: 1000px; color: white; font-size: 30px; text-align: center; justify-content: center; align-items: center; display: flex;">
+            Toca este boton para cambiar el color de fondo
+        </div>
+        <div id="azul" onclick="cambiarFondo(2)"
+            style="background-color: blue ; border: 5px solid black; height: 100px; width: 1000px; color: white; font-size: 30px;  text-align: center; justify-content: center; align-items: center; display: flex;">
+            Toca este boton para cambiar el color de fondo
+        </div>
+    </div>
+
+    <script>
+        const body = document.querySelector('body');
+        function cambiarFondo(RGB) {
+            switch (RGB) {
+                case 0:
+                    body.style = 'background: red;'
+                    break;
+
+                case 1:
+                    body.style = 'background: green;'
+                    break;
+
+                case 2:
+                    body.style = 'background: blue;'
+                    break;
+            }
+        }
+    </script>
+</body>
+
+</html>

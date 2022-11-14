@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercico 2-JS</title>
+</head>
+
+<body>
+    <textarea name="texto" id="text" cols="100" rows="20" onkeyup="contchar(this);"></textarea>
+ <p id="text1">0 caracteres</p>
+
+    <script>
+        function contchar(text) {
+            document.getElementById("text1").innerHTML = text.value.length + 'caracteres';
+        }
+    </script>
+</body>
+
+</html>
