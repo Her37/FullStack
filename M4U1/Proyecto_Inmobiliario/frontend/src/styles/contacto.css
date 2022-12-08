@@ -1,0 +1,36 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: century;
+}
+
+body {
+    background-color: rgb(253, 253, 253);
+}
+
+main h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+form {
+
+    background-color: rgb(243, 244, 241);
+}
+
+.recuadro {
+    text-align: center;
+    background-color: white;
+    /* margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 400px;
+    margin-right: 400px; */
+    padding: 30px;
+    border: 5px solid cornflowerblue;
+
+}
+
+input {
+
+    background-color: rgb(244, 246, 247);
+}

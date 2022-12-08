@@ -3,12 +3,28 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     line-height: 20px;
+
 }
 
 header {
     background-color: #134715;
     padding: 16px 0;
 }
+
+.logo {
+    width: 8%;
+    /* animation: logo-spin infinite 10s linear; */
+}
+
+/* @keyframes logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+} */
 
 header h1 {
     color: white;
@@ -17,13 +33,30 @@ header h1 {
     font-style: italic;
     display: inline-block;
     position: relative;
-    bottom: 35px;
-    margin-left: 10px;
+    bottom: 15px;
+    /* margin-left: 10px; */
 }
+
+header p {
+    /* display: inline-block; */
+    /* position: relative; */
+    margin-left: 80px;
+    bottom: 20px;
+    text-align: justify;
+}
+
+/* fin header */
+main p {
+    text-align: justify;
+
+}
+
+/* inicio nav */
 
 nav {
     background-color: #22552473;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
+
 }
 
 nav ul {
@@ -66,6 +99,7 @@ nav ul li a.activo {
 .holder {
     max-width: 960px;
     margin: 0 auto;
+
 }
 
 h2 {
@@ -73,6 +107,7 @@ h2 {
     font-weight: 400;
 }
 
+/* fin nav
 /* inicio home */
 
 .bienvenidos {
@@ -105,7 +140,7 @@ h2 {
     text-align: center;
     font-size: 22px;
     display: block;
-    
+
 }
 
 .autor {
@@ -114,6 +149,30 @@ h2 {
     margin: 12px 0;
     display: block;
 }
+
+main div img {
+    animation: img infinite 20s linear;
+}
+
+@keyframes img {
+    0% {
+        transform: scaleX(100%);
+    }
+    25% {
+        transform: scaleX(105%);
+    }
+    59% {
+        transform: scaleX(110%);
+    }
+    75% {
+        transform: scaleX(105%);
+    }
+    100% {
+        transform: scaleX(100%);
+    }
+}
+
+
 /* fin home */
 
 /* inicio galeria */
@@ -128,28 +187,27 @@ h2 {
     margin: 20px 0px;
     height: 250px;
     /* width: auto ; */
-   
+
 }
 
 .img {
 
     border-radius: 25px 25px 25px 25px;
-    /* width: 200px ; */
-    
+    width: 200px;
 }
 
 .p {
     text-align: justify;
 }
 
-#IMG1{
+#IMG1 {
     /* width: fit-content; */
 }
 
 /* fin galeria */
 
 /* inicio Contacto */
-*{
+* {
     padding: 0;
     margin: 0;
     font-family: century;
@@ -163,10 +221,12 @@ h1 {
     text-align: center;
     font-size: 50px;
 }
-form{
+
+form {
 
     background-color: rgb(243, 244, 241);
 }
+
 .recuadro {
     text-align: center;
     background-color: white;
@@ -188,11 +248,11 @@ input {
 
 /* inicio nosotros */
 
-.histora p{
+.histora p {
     font-size: 12px;
 }
 
-.personas{
+.personas {
     display: flex;
     justify-content: center;
 }
@@ -207,16 +267,17 @@ input {
     margin: 5px;
 }
 
-.persona img{
+.persona img {
     border-radius: 50%;
     max-width: 60%;
-    box-shadow: 0 0 5px rgba(0,0,0,0,5);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0, 5);
 }
 
-.persona h5, h6{
-margin: 0;
-font-size: 14px;
-color: #2e64a1;
+.persona h5,
+h6 {
+    margin: 0;
+    font-size: 14px;
+    color: #2e64a1;
 }
 
 .persona h6 {
@@ -224,8 +285,9 @@ color: #2e64a1;
     font-style: italic;
 }
 
-.persona p{
+.persona p {
     color: #666;
     font-size: 10px;
 }
+
 /* fin nosotros */

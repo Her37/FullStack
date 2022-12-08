@@ -1,0 +1,32 @@
+
+.carrusel {
+
+    align-items: center;
+    border: 2px solid #090909;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.29);
+    border-radius: 25px 25px 25px 25px;
+    margin: 20px 0px;
+    height: 400px;
+    width: auto ;
+
+
+}
+
+.galeria{
+    max-width: 960px;
+    margin: 0 auto;
+
+}
+
+.img {
+
+    border-radius: 25px 25px 25px 25px;
+    /* width: 200px; */
+    width: fit-content;
+
+}
+
+.p {
+    text-align: justify;
+}
+

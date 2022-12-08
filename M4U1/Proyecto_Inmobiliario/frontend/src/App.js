@@ -1,6 +1,7 @@
-// import './App.css';
+import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-import{BrowserRouter, Routes, Route} from "react-router-dom"
+import { BrowserRouter, Routes, Route } from "react-router-dom"
 import React from 'react';
 
 import Footer from "./componentes/layout/Footer";
@@ -17,20 +18,22 @@ import Contacto from "./pages/Contacto";
 function App() {
   return (
     <div className="App">
-      <Header />
+
       <BrowserRouter>
+        <Header />
         <Nav />
         <Routes>
-          <Route path="Home" element={<Home />} />
-          <Route path="Nosotros" element={<Nosotros />} />
-          <Route path="Novedades" element={<Novedades />} />
-          <Route path="Galeria" element={<Galeria />} />
-          <Route path="Servicios" element={<Servicios />} />
-          <Route path="Contacto" element={<Contacto />} />
+          <Route path="/Home" element={<Home />} />
+          <Route path="/Nosotros" element={<Nosotros />} />
+          <Route path="/Novedades" element={<Novedades />} />
+          <Route path="/Galeria" element={<Galeria />} />
+          <Route path="/Servicios" element={<Servicios />} />
+          <Route path="/Contacto" element={<Contacto />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
-      <Footer />
- 
+
+
     </div>
   );
 };

@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/nosotros.css';
 
 const Nosotros = (props) => {
 return (
@@ -22,7 +23,7 @@ return (
     <div className="staff">
         <h2>Staff</h2>
         <div className="personas">
-            <div clclassNameass="persona">
+            <div className="persona">
                 <img src="img/nosotros/WhatsApp Image 2022-11-04 at 12.01.59 PM.jpeg" alt="" />
                 <h5>Hernan</h5>
                 <h6>Gerente Gral</h6>

@@ -1,15 +1,16 @@
 import React from "react";
+import '../../styles/Header.css'
 
 const Header = (props) => {
-return (
-<header>
-  <div className="holder">
-    <img src="https://via.placeholder.com/150?text=LOGO" width="100" alt="Transporte X" />
-    <h1>Proyecto Inmobiliario</h1>
-  <hr></hr> 
-  </div>
-</header>
-);
+  return (
+    <header>
+      <div className="holder contenedor">
+        <img class="logo" src="../../../img/home/images2.jpg" width="100" alt="" />
+        <h1>Proyecto Inmobiliario</h1>
+        <h5>sin intermediario</h5>
+      </div>
+    </header>
+  );
 };
-
+// M4U1\Proyecto_Inmobiliario\frontend\public\img\home\Home.jpg
 export default Header;

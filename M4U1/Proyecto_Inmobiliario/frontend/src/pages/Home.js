@@ -1,37 +1,82 @@
 import React from 'react';
+import '../styles/home.css';
 
 const Home = (props) => {
-    return(
-        <main className="holder">
-        <div>
-            <img src="https://via.placeholder.com/960x300" alt=""/>
-        </div>
-        <div className="columnas">
-            <section className="bienvenidos">
-                <h2>Bienvenidos</h2>
-                {/* <br> </br> */}
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum officia vel laboriosam, nemo itaque
-                    repellat sequi enim error ducimus pariatur necessitatibus veritatis et at earum tempore quod
-                    nesciunt facere
-                    consequuntur!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat fuga animi quidem quaerat delectus
-                    libero
-                    assumenda quo, placeat amet ducimus harum adipisci alias, maxime, accusantium doloribus odit saepe
-                    eum nisi.
-                </p>
-            </section>
+    return (
+        <main>
+<div className='caja'>
+            <img className='fondo' src="../../../img/home/Home.jpg" alt="" />
+ </div>
+            <div className="holder">
+                <div className="columnas" >
 
-            <section className="testimonios">
-                <h2>Comentarios</h2>
-                {/* <br> </br> */}
-                <div className="testimonio">
-                    <span className="cita">"Muy serios y profesionales."</span>
-                    <span className="autor">Pepe y Juan</span>
+                    <section className="bienvenidos">
+                        <h2>Bienvenidos</h2>
+                        <br />
+                        <p><b>Bienvenidos, este sito conciste en una plataforma de intercambios sin intermediarios. Donde las
+                            persoanas podran intercambiar libremente lo que deseen.
+                            Para ello en un futuro implementaremos el uso de la tecnologia de Contratos Inteligentes o
+                            <span> SamrtContract</span>, pero que actualemte no se encuentra disponible estamos trabajando en su
+                            implementacion.</b>
+                        </p>
+                        <br />
+                        <p><b>Por el contrario, podras consultar y ponerte en contacto con los distintos ofertantes del sito a
+                            travez de email o telefono y pactar la forma de intercambio que desees.
+                            Ten en cuenta que no se permitira publicar articulos sin su debida documentacion; como ser: titulo, certificados,
+                            factura, etc. ni tampoco ningun articulo prohibido por las leyes actuales.</b>
+                        </p>
+                        <br />
+                        <p><b>Si lo deseas te invito a que te des una vuelta por el Sitio y me dejes una opinion en los
+                            comentarios. Saludos!</b></p>
+
+                        <br />
+                        <p><b>Bienvenidos, este sito conciste en una plataforma de intercambios sin intermediarios. Donde las
+                            persoanas podran intercambiar libremente lo que deseen.
+                            Para ello en un futuro implementaremos el uso de la tecnologia de Contratos Inteligentes o
+                            <span> SamrtContract</span>, pero que actualemte no se encuentra disponible estamos trabajando en su
+                            implementacion.</b>
+                        </p>
+                        <br />
+                        <p><b>Por el contrario, podras consultar y ponerte en contacto con los distintos ofertantes del sito a
+                            travez de email o telefono y pactar la forma de intercambio que desees.
+                            Ten en cuenta que no se permitira publicar articulos sin su debida documentacion; como ser: titulo, certificados,
+                            factura, etc. ni tampoco ningun articulo prohibido por las leyes actuales.</b>
+                        </p>
+                        <br />
+                        <p><b>Si lo deseas te invito a que te des una vuelta por el Sitio y me dejes una opinion en los
+                            comentarios. Saludos!</b></p>
+
+                        <br />
+                        <p><b>Bienvenidos, este sito conciste en una plataforma de intercambios sin intermediarios. Donde las
+                            persoanas podran intercambiar libremente lo que deseen.
+                            Para ello en un futuro implementaremos el uso de la tecnologia de Contratos Inteligentes o
+                            <span> SamrtContract</span>, pero que actualemte no se encuentra disponible estamos trabajando en su
+                            implementacion.</b>
+                        </p>
+                        <br />
+                        <p><b>Por el contrario, podras consultar y ponerte en contacto con los distintos ofertantes del sito a
+                            travez de email o telefono y pactar la forma de intercambio que desees.
+                            Ten en cuenta que no se permitira publicar articulos sin su debida documentacion; como ser: titulo, certificados,
+                            factura, etc. ni tampoco ningun articulo prohibido por las leyes actuales.</b>
+                        </p>
+                        <br />
+                        <p><b>Si lo deseas te invito a que te des una vuelta por el Sitio y me dejes una opinion en los
+                            comentarios. Saludos!</b></p>
+
+                    </section>
+
+                    <section className="testimonios">
+                        <h2>Comentarios</h2>
+                        <br />
+                        <div className="testimonio">
+                            <span className="cita">"Muy serios y profesionales."</span>
+                            <span className="autor">Pablo R.</span>
+                        </div>
+                    </section>
                 </div>
-            </section>
-        </div>
-    </main>
-    )
+            </div>
+        </main>
+    );
 }
 
 export default Home;
