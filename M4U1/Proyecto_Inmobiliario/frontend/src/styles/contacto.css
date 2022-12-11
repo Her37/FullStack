@@ -13,24 +13,94 @@ main h1 {
     font-size: 50px;
 }
 
+.dato p {
+    font-size: 14px;
+}
+
+dato ul li {
+    font-size: 13px;
+}
+
+.contacto {
+    display: flex;
+    gap: 24px;
+}
+
+.contacto div {
+
+    width: 100%;
+}
+
+.formulario p {
+
+    display: flex;
+}
+
+.formulario p label {
+
+    min-width: 80px;
+    display: flex;
+    align-items: center;
+
+}
+
+.formulario p:nth-child(4) {
+    align-items: start;
+
+}
+
+.formulario textarea {
+    resize: none;
+    height: 150px;
+    width: 100%;
+}
+
+.botones {
+
+}
+
+
+.formulario input[type="text"] {
+    background-color: rgb(244, 246, 247);
+    border-radius: 10px;
+}
+
+.formulario input[type="submit"] {
+    background-color: rgb(71, 90, 34);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    padding: 6px 20px;
+    margin: 10px;
+    width: auto;
+    /* position: relative; */
+    left: 5rem
+        /* cursor: poniter; */
+}
+
+.formulario input[type="reset"] {
+    background-color: rgb(71, 90, 34);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    padding: 6px 20px;
+    margin: 10px;
+    width: auto;
+    /* position: relative; */
+    left: 5rem
+}
+
+.formulario input[type="submit"]:hover {
+    background-color: aquamarine;
+}
+
+.formulario input[type="reset"]:hover {
+    background-color: aquamarine;
+}
+
 form {
 
     background-color: rgb(243, 244, 241);
-}
-
-.recuadro {
-    text-align: center;
-    background-color: white;
-    /* margin-top: 50px;
-    margin-bottom: 50px;
-    margin-left: 400px;
-    margin-right: 400px; */
-    padding: 30px;
-    border: 5px solid cornflowerblue;
-
-}
-
-input {
-
-    background-color: rgb(244, 246, 247);
 }

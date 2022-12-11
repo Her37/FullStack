@@ -11,7 +11,7 @@ const Galeria = (props) => {
         <Container className="galeria">
             <Row>
                 <Col>
-                <h2>TITULO</h2>
+                <h2>TERRENO</h2>
                 <p class="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et reprehenderit blanditiis
                     veritatis dolor
                     mollitia, similique aliquid quia temporibus facere cumque laboriosam? Accusantium aspernatur
@@ -23,7 +23,7 @@ const Galeria = (props) => {
                         <Carousel.Item>
                             <img
                                 className="d-block w-100, carrusel"
-                                src="img/galeria/Depto Jujuy/Dptojujuy1.jpg"
+                                src="/img/galeria/terreno2/imagen1.jpg"
                                 alt="First slide"
                             />
                             <Carousel.Caption>
@@ -34,7 +34,7 @@ const Galeria = (props) => {
                         <Carousel.Item>
                             <img
                                 className="d-block w-100, carrusel"
-                                src="https://via.placeholder.com/266x200?text=IMG2"
+                                src="/img/galeria/terreno2/imagen2.jpg"
                                 alt="Second slide"
                             />
                             <Carousel.Caption>
@@ -45,7 +45,7 @@ const Galeria = (props) => {
                         <Carousel.Item>
                             <img
                                 className="d-block w-100, carrusel"
-                                src="https://via.placeholder.com/266x200?text=IMG3"
+                                src="/img/galeria/terreno2/imagen3.jpg"
                                 alt="Third slide"
                             />
 
@@ -63,7 +63,7 @@ const Galeria = (props) => {
 
             <Row>
                 <Col>
-                <h2>TITULO</h2>
+                <h2>TERRENO</h2>
                 <p class="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et reprehenderit blanditiis
                     veritatis dolor
                     mollitia, similique aliquid quia temporibus facere cumque laboriosam? Accusantium aspernatur
@@ -74,7 +74,7 @@ const Galeria = (props) => {
                         <Carousel.Item>
                             <img
                                 className="d-block w-100, carrusel"
-                                src="https://via.placeholder.com/266x200?text=IMG1"
+                                src="/img/galeria/terreno1/imagen1.jpg"
                                 alt="First slide"
                             />
                             <Carousel.Caption>
@@ -85,7 +85,7 @@ const Galeria = (props) => {
                         <Carousel.Item>
                             <img
                                 className="d-block w-100, carrusel"
-                                src="https://via.placeholder.com/266x200?text=IMG2"
+                                src="/img/galeria/terreno1/imagen2.jpg"
                                 alt="Second slide"
                             />
 
@@ -97,7 +97,7 @@ const Galeria = (props) => {
                         <Carousel.Item>
                             <img
                                 className="d-block w-100, carrusel"
-                                src="https://via.placeholder.com/266x200?text=IMG3"
+                                src="/img/galeria/terreno1/imagen3.jpg"
                                 alt="Third slide"
                             />
 
@@ -114,7 +114,7 @@ const Galeria = (props) => {
 
             <Row>
                 <Col>
-                <h2>TITULO</h2>
+                <h2>DEPARTAMENTO</h2>
                 <p class="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et reprehenderit blanditiis
                     veritatis dolor
                     mollitia, similique aliquid quia temporibus facere cumque laboriosam? Accusantium aspernatur
@@ -125,7 +125,7 @@ const Galeria = (props) => {
                         <Carousel.Item>
                             <img
                                 className="d-block w-100, carrusel"
-                                src="img/galeria/Depatamento Jean Jaures 300/WhatsApp Image 2022-02-15 at 4.43.15 PM (5).jpeg"
+                                src="/img/galeria/Depto_JJ_300/imagen4.jpeg"
                                 alt="First slide"
                             />
                             <Carousel.Caption>
@@ -136,7 +136,7 @@ const Galeria = (props) => {
                         <Carousel.Item>
                             <img
                                 className="d-block w-100, carrusel"
-                                src="img/galeria/Depatamento Jean Jaures 300/WhatsApp Image 2022-02-15 at 4.43.15 PM (2).jpeg"
+                                src="/img/galeria/Depto_JJ_300/imagen2.jpeg"
                                 alt="Second slide"
                             />
 
@@ -148,7 +148,7 @@ const Galeria = (props) => {
                         <Carousel.Item>
                             <img
                                 className="d-block w-100, carrusel"
-                                src="img/galeria/Depatamento Jean Jaures 300/WhatsApp Image 2022-02-15 at 4.43.17 PM (1).jpeg"
+                                src="/img/galeria/Depto_JJ_300/imagen3.jpeg"
                                 alt="Third slide"
                             />
 
