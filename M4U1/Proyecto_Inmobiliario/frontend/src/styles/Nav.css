@@ -1,6 +1,7 @@
 nav {
     background-color: #22552473;
     /* margin-bottom: 20px; */
+    
   
   }
   
@@ -27,8 +28,6 @@ nav {
   nav ul li a:hover {
     background-color: rgba(0, 0, 0, 0.3);
   }
-  
-  
   
   nav ul li a.activo {
     background-color: rgba(0, 0, 0, 0.3);

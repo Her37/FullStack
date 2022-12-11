@@ -1,0 +1,28 @@
+<h1>{{title}}</h1>
+
+{{#if conocido}}
+<p>Hola {{nombre}} Sos mayor de 18?</p>
+<form action="/autorizacion" method="post">
+
+    <input type="submit" value="SI" name="autorizado">
+    <button type="submit" value="no-autorizado" onclick="alert('No puedes ingresar a esta pagina')">NO</button>
+</form>
+{{/if}}
+
+{{#if desconocido}}
+<p>Ingrese Nombre y Contraseña</p>
+<form action="/ingresar" method="post">
+    Nombre
+    <input type="text" name="nombre"><br><br>
+    Contraseña
+    <input type="password" name="contraseña">
+    <button>ingresar</button>
+</form>
+{{/if}}
+
+{{#if autorizado}}
+
+<h3>Hola {{nombre}} bienvenido a la pagina del administrador</h3>
+<a href="/salir">Salir</a>
+
+{{/if}}

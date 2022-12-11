@@ -13,11 +13,12 @@
   display: flex;
   justify-content: space-between;
   padding-bottom: 30px;
-  margin-top: 30px;
+  margin-top: 500px;
 }
 
 .bienvenidos p {
   font-size: 20px;
+ 
 }
 
 .testimonio {
@@ -42,9 +43,11 @@
 }
 .caja{
   /* position: relative; */
-  height: 500px
+  /* height: 500px; */
+  /* margin-bottom: 500px; */
 }
 .fondo {
+  position: fixed; 
   z-index: -1;
   top: 150px;
   max-height: 500px;
@@ -80,3 +83,4 @@ position: fixed;
     transform: scaleX(100%);
   }
 }
+
