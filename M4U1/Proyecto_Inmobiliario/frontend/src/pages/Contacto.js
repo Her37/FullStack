@@ -1,9 +1,6 @@
 import React from 'react';
 import '../styles/contacto.css'
 
-require('dotenv').config();
-var pool = require('./models/bd');
-
 const Contacto = (props) => {
 return (
 <main className="holder contacto">
