@@ -1,10 +1,9 @@
-
-
 .logo {
-
   position: absolute;
   top: 26px;
   margin: auto;
+  /* mix-blend-mode:luminosity; */
+  border-radius: 20px;
 
   /* animation: logo-spin infinite 10s linear; */
 }
@@ -23,7 +22,6 @@ header {
   background-color: #134715;
   height: 120px;
   position: relative;
-  
 
 }
 
@@ -40,12 +38,19 @@ header {
 header div h5 {
   font-weight: 400;
   bottom: 20px;
-  /* text-align: center; */
-  color: bisque;
-  font-style: italic;
   margin-left: 110px;
   margin-bottom: 0px;
   position: absolute;
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: 27px;
+  letter-spacing: 4px;
+  word-spacing: 5.4px;
+  color: #FFE4C4;
+  text-decoration: none solid rgb(68, 68, 68);
+  font-style: italic;
+  font-variant: normal;
+  text-transform: capitalize;
+
 }
 
 

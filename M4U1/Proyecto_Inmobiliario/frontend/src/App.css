@@ -6,9 +6,6 @@ body {
   flex-direction: column;
   min-height: 100vh;
 
-
-
-
 }
 
 main p {
@@ -18,9 +15,6 @@ main p {
 .holder {
   max-width: 960px;
   margin: 0 auto;
-
-  
- 
 }
 
 h2 {

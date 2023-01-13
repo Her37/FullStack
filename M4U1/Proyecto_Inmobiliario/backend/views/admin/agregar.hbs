@@ -1,0 +1,31 @@
+<Section>
+    <div class="container log">
+        <h3>Agregar una nueva Novedad</h3>
+        <div calss="row">
+            <form action="/admin/novedades/agregar" method="post">
+                <div class="mb-3 roe">
+                    <div class="col 10">
+                        <input type="text" class="form-control" placeholder="Titulo" name="titulo">
+                    </div>
+                </div>
+                <div class="mb-3 roe">
+                    <div class="col 10">
+                        <textarea type="text" class="form-control" placeholder="Subtitulo" name="subtitulo"></textarea>
+                    </div>
+                </div>
+
+                <div class="mb-3 roe">
+                    <div class="col 10">
+                        <textarea type="text" class="form-control" placeholder="Cuerpo" name="cuerpo"></textarea>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Guardar</button>
+            </form>
+
+        </div>
+
+    </div>
+    {{#if error}}
+    <p>{{message}}</p>
+    {{/if}}
+</Section>

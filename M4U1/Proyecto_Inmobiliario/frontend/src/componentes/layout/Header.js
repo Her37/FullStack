@@ -7,7 +7,7 @@ const Header = (props) => {
       <div className="holder contenedor">
         <img class="logo" src="../../../img/home/images2.jpg" width="100" alt="" />
         <h1>Proyecto Inmobiliario</h1>
-        <h5>sin intermediario</h5>
+        <h5>sin intermediarios</h5>
       </div>
     </header>
   );

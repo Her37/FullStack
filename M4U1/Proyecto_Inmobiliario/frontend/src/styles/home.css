@@ -161,3 +161,9 @@
     transform: scaleX(100%);
   }
 }
+
+video{
+margin-left: auto;
+width: 700px;
+height: auto;
+}
