@@ -19,13 +19,18 @@
                         <textarea type="text" class="form-control" placeholder="Cuerpo" name="cuerpo"></textarea>
                     </div>
                 </div>
-                <button type="submit" class="btn btn-primary">Guardar</button>
+                <div class="boton">
+                    <button type="submit" class="btn btn-primary">Guardar</button>
+                    <button type="button" class="btn btn-primary" onclick="window.history.back()">Volver</button>
+                    
+          
+                </div>
             </form>
-
+            {{#if error}}
+            <p style="text-align: center;">{{message}}</p>
+            {{/if}}
         </div>
 
     </div>
-    {{#if error}}
-    <p>{{message}}</p>
-    {{/if}}
+
 </Section>

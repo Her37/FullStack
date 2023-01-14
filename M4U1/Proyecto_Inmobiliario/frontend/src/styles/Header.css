@@ -49,11 +49,8 @@ header div h5 {
   text-decoration: none solid rgb(68, 68, 68);
   font-style: italic;
   font-variant: normal;
-  text-transform: capitalize;
-
+  text-transform: uppercase;
 }
-
-
 
 header div h1 {
   color: white;

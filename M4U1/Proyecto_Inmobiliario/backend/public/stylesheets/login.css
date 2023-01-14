@@ -4,13 +4,16 @@ section {
 
 h3 {
   text-align: center;
-  margin: 0px;
   margin-bottom: 30px;
 }
 
 form {
   display: flex;
-flex-direction: column;
+  flex-direction: column;
+}
+
+form button{
+  margin-bottom: 15px;
 }
 
 .log {

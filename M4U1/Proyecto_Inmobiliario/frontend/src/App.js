@@ -16,6 +16,8 @@ import Galeria from "./pages/Galeria";
 import Servicios from "./pages/Servicios";
 import Contacto from "./pages/Contacto";
 
+
+
 function App() {
   return (
     <div className="App">
@@ -34,6 +36,9 @@ function App() {
         <Footer />
       </BrowserRouter>
 
+    
+
+      
 
     </div>
   );
