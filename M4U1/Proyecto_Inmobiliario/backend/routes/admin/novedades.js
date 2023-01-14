@@ -23,11 +23,6 @@ router.get('/agregar', (req, res, next) => {
   });
 });
 
-// router.get('/agregar', (req, res, next) => {
-//   res.render('admin/agregar', {
-//     layout: 'admin/layout'
-//   });
-// });
 
 router.post('/agregar', async (req, res, next) => {
   try {
