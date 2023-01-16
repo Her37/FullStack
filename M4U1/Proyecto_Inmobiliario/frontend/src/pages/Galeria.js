@@ -19,7 +19,7 @@ const Galeria = (props) => {
                 </Col>
 
                 <Col>
-                    <Carousel fade>
+                    <Carousel>
                         <Carousel.Item>
                             <img
                                 className="d-block w-100, carrusel"
@@ -70,7 +70,7 @@ const Galeria = (props) => {
                     expedita animi tempora magni sunt inventore porro.</p>
                 </Col>
                 <Col>
-                    <Carousel fade>
+                    <Carousel>
                         <Carousel.Item>
                             <img
                                 className="d-block w-100, carrusel"
@@ -121,7 +121,7 @@ const Galeria = (props) => {
                     expedita animi tempora magni sunt inventore porro.</p>
                 </Col>
                 <Col>
-                    <Carousel fade>
+                    <Carousel>
                         <Carousel.Item>
                             <img
                                 className="d-block w-100, carrusel"

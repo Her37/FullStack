@@ -150,7 +150,7 @@ h2 {
     display: block;
 }
 
-main div img {
+/* main div img {
     animation: img infinite 20s linear;
 }
 
@@ -170,7 +170,7 @@ main div img {
     100% {
         transform: scaleX(100%);
     }
-}
+} */
 
 
 /* fin home */

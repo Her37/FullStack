@@ -167,3 +167,23 @@ margin-left: auto;
 width: 700px;
 height: auto;
 }
+
+@media all  and (max-width: 850px) {
+
+main{
+  width: 640px;
+}
+.inicio{
+
+  height: 500px;
+}
+
+#caja{
+  width: 610px;
+  margin-bottom: 550px;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  
+}
+}

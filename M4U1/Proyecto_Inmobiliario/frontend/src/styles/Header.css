@@ -61,3 +61,24 @@ header div h1 {
   margin-left: 110px;
   position: absolute;
 }
+
+@media all  and (max-width: 850px) {
+  header {
+    width: 640px;
+  }
+  
+  header div h1 {
+    font-size: 27px;
+  }
+
+  header div h5{
+    font-size: 15px;
+  }
+
+  nav{
+
+    width: 640px;
+  }
+
+
+}

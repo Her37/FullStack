@@ -102,3 +102,12 @@ main h1 {
     background-color: rgba(8, 96, 67, 0.7);
 }
 
+@media all  and (max-width: 850px) {
+
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+}
