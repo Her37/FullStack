@@ -52,3 +52,4 @@ switch (destino) {
         alert('Viaje en avion');
         break;
 }
+

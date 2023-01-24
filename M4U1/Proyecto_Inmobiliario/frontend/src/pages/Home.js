@@ -1,6 +1,15 @@
 import React from 'react';
 import '../styles/home.css';
-import ReactPlayer from 'react-player'
+import ReactPlayer from 'react-player';
+
+function myNewFunction() {
+    const lugar = document.getElementById('lugar').value;
+    const condicion = document.getElementById('condicion').value;
+    const tipo = document.getElementById('tipo').value;
+    const data = { tipo, condicion, lugar };
+}
+
+
 
 
 const Home = (props) => {
@@ -9,33 +18,34 @@ const Home = (props) => {
             <div className="inicio">
                 <div className="sub_fondo">
                     <div id="caja">
-                        <form action='' id="form" method=''>
+                        <form action='/Galeria' id="form" method='get'>
                             <input type="text" className="text" />
-                            <button type='submit' className="button" role="button">BUSCAR</button>
+                            <button type='submit' className="button" onClick="filterElements()">BUSCAR</button>
 
-                            <select class="form-select button " aria-label="Default select example ">
-                                <option selected></option>
+                            <select className="form-select button " aria-label="Default select example" id="lugar" onChange={myNewFunction}>
+                                <option selected>Lugar</option>
                                 <option value="1">CABA</option>
                                 <option value="2">Cordoba</option>
                                 <option value="3">Prov. Bs. As</option>
                             </select>
-                            <select class="form-select button " aria-label="Default select example ">
-                                <option selected></option>
+                            <select className="form-select button " aria-label="Default select example" id="condicion" onChange={myNewFunction}>
+                                <option selected>Condicion</option>
                                 <option value="1">Alquiler</option>
                                 <option value="2">Venta</option>
                                 <option value="3">Permuta</option>
                             </select>
-                            <select class="form-select button " aria-label="Default select example ">
-                                <option selected></option>
+                            <select className="form-select button " aria-label="Default select example" id="tipo" onChange={myNewFunction}>
+                                <option selected>Tipo</option>
                                 <option value="1">Casa</option>
-                                <option value="2">Departamento</option>
-                                <option value="3">Ph</option>
+                                <option value="2">Terreno</option>
+                                <option value="3">Departamento</option>
                             </select>
                         </form>
                     </div>
                     <img className="fondo" src="../../../img/home/Home.jpg" alt="" />
                 </div>
             </div>
+
             <div className="holder">
                 <div className="columnas">
 
@@ -59,7 +69,7 @@ const Home = (props) => {
 
                         <section>
                             <p>
-                                <i>Si quieres saber mas te comparto esta nota <span>Bit2me</span>: <a
+                                <i>Si quieres saber mas sobre que son los <b>Contratos Inteligentes</b>, te comparto esta nota de <span>Bit2me</span>: <a
                                     href="https://academy.bit2me.com/que-son-los-smart-contracts/">Que son los smart
                                     contracts?</a></i>
                             </p>
@@ -80,11 +90,23 @@ const Home = (props) => {
                             <span className="cita">"Excelente iniciativa!"</span>
                             <span className="autor">Gaston</span>
                         </div>
+
+                        <div>
+                            <h3> El Array es: </h3> data ;
+                        </div>
+
                     </section>
                 </div>
             </div>
+
         </main>
     );
 }
 
-export default Home;
+
+
+export default { Home, myNewFunction }
+
+
+
+

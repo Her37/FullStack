@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import React from 'react';
 
+
 import Footer from "./componentes/layout/Footer";
 import Header from "./componentes/layout/Header";
 import Nav from "./componentes/layout/Nav";
@@ -16,6 +17,8 @@ import Galeria from "./pages/Galeria";
 import Servicios from "./pages/Servicios";
 import Contacto from "./pages/Contacto";
 
+import GMap from './pages/APIs/Map_Google';
+
 
 
 function App() {
@@ -25,6 +28,8 @@ function App() {
       <BrowserRouter>
         <Header />
         <Nav />
+        <Footer />
+
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Nosotros" element={<Nosotros />} />
@@ -32,13 +37,11 @@ function App() {
           <Route path="/Galeria" element={<Galeria />} />
           <Route path="/Servicios" element={<Servicios />} />
           <Route path="/Contacto" element={<Contacto />} />
+          <Route path="/Map" element={<GMap />} />
         </Routes>
-        <Footer />
+
       </BrowserRouter>
 
-    
-
-      
 
     </div>
   );

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <input type="text" id="search-input" placeholder="Search..." onkeyup="filterElements()">
+
+    <ul id="elements-list">
+        <li>Element 1</li>
+        <li>Element 2</li>
+        <li>Element 3</li>
+        <li>Element 4</li>
+    </ul>
+
+    <script>
+        function filterElements() {
+            // Obtener el valor de búsqueda
+            const searchValue = document.getElementById("search-input").value.toLowerCase();
+
+            // Obtener la lista de elementos
+            const elementsList = document.getElementById("elements-list").children;
+
+            // Recorrer la lista de elementos
+            for (let i = 0; i < elementsList.length; i++) {
+                const element = elementsList[i];
+                if (element.textContent.toLowerCase().includes(searchValue)) {
+                    element.style.display = "block";
+                } else {
+                    element.style.display = "none";
+                }
+            }
+        }
+    </script>
+
+</body>
+
+</html>

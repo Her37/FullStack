@@ -9,42 +9,22 @@
 </head>
 
 <body>
-
     <script>
-        //se crean los array
-                var array_1 = [];
-        
-        //el usuario carga 10 dato en el array_1
-                for (let f = 0; f <= 9; f++) {
-                   array_1[f] = parseInt(prompt("Ingrese un numero cualquiera", ''));
-        
-                while (Number.isNaN(array_1[f]))
-                    { array_1[f] = parseInt(prompt("Ingrese un numero", 'ingrese solo numeros')); }
-                }
-                console.log(array_1);
-            document.write('<h3> El Array es: </h3>' + array_1 + '<br>');
-        
-        //el primer for posiciona al array_1 en el 1er elemetno
-                for (let f = 0; f <= 9; f++) {
-                    let j = 0;
-        
-        //el segundo for vuelve a recorerrer el mismo array pero en cada iteracion realiza la comparacion "mayor que"
-                    for (let i = 0; i <= 9; i++) {
-        
-        //de las comparaciones la variable j se incrementara 
-                        if (array_1[f] > array_1[i]) {
-                            j = j + 1;
-                    }     
-        //si j no es 9, el numero que se esta comparando con los demas es por lo menos menor a otro de su grupo, luego se repite el primer for, se resetea j y se repite el 2do for hasta que un numero valide por lo menos 10 veces el if.
-                            if (j == 9) {
-                                document.write('<h3> El número mayor es: </h3>'  + array_1[f]);
-                                console.log(`El número ${array_1[f]} es el mayor.`);
-                            }
-                        
-                }
+        function myNewFunction() {
+            // alert(sel.options[sel.selectedIndex].text);
+            const lugar = document.getElementById('box1').value;
+            const condicion = document.getElementById('box2').value;
+            const tipo = document.getElementById('box3').value;
+            const data = { tipo, condicion, lugar };
+            console.log(data);
         }
-        
-            </script>
+    </script>
+    <select >
+        <option value="98" id="box1">dog</option>
+        <option value="7122" id="box2">cat</option>
+        <option value="142" id="box3">bird</option>
+    </select>
+    <button type='submit' onChange="myNewFunction(this);">BUSCAR</button>
 </body>
 
 </html>
