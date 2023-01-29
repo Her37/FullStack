@@ -1,9 +1,9 @@
 import "../App.css";
-import { Publicacion } from "./Galeria";
-
+import { Publicacion, Selection } from "./Galeria";
 
 
 const Galeria2 = (props) => {
+
   return (
     <div className="App">
 

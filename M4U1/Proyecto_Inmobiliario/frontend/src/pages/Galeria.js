@@ -7,31 +7,13 @@ import Col from "react-bootstrap/Col";
 
 
 export function Selection(props) {
-  const date = props.dato;
-  console.log(date);
-}
-var filtro = () => {
 
 
-
-  const elementsList = document.getElementById("elements-list").children;
-  console.log(elementsList);
-
-
-  // // Recorrer la lista de elementos
-  for (let i = 0; i < elementsList.length; i++) {
-    const element = elementsList[i];
-    if (element.textContent.toLowerCase().includes(Selection.date)) {
-      element.style.display = "block";
-    } else {
-      element.style.display = "none";
-    }
-  }
 }
 
 
 export function Publicacion(props) {
-filtro()
+
   return (
     <ul id="elements-list" >
       <Container className="galeria">
