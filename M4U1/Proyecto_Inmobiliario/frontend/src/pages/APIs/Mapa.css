@@ -1,0 +1,8 @@
+#map {
+    height: 100%;
+    position: relative;
+    z-index: -1;
+    margin: 100px;
+    padding: 0px;
+    background-color: rgb(130, 130, 160);
+}

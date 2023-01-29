@@ -1,40 +1,47 @@
 import React from 'react';
 import '../styles/home.css';
 import ReactPlayer from 'react-player';
+import { Selection } from './Galeria'
+import { useState } from "react";
 
-function myNewFunction() {
-    const lugar = document.getElementById('lugar').value;
-    const condicion = document.getElementById('condicion').value;
-    const tipo = document.getElementById('tipo').value;
-    const data = { tipo, condicion, lugar };
-}
+export const Home = (props) => {
 
+    const [dato, Setdato] = useState('');
 
+    var info = () => {
+        const lugar = document.getElementById('lugar').value;
+        const condicion = document.getElementById('condicion').value;
+        const tipo = document.getElementById('tipo').value;
+        const data = [tipo, condicion, lugar];
+        // console.log(data);
+        Setdato(data);
+    };
 
-
-const Home = (props) => {
     return (
         <main>
+            <Selection
+                dato={dato}
+            />
             <div className="inicio">
                 <div className="sub_fondo">
                     <div id="caja">
-                        <form action='/Galeria' id="form" method='get'>
+                        <form action='./Galeria' id="form" method=''>
                             <input type="text" className="text" />
-                            <button type='submit' className="button" onClick="filterElements()">BUSCAR</button>
+                            <button type='submit' className="button" onClick={info}>BUSCAR</button>
 
-                            <select className="form-select button " aria-label="Default select example" id="lugar" onChange={myNewFunction}>
+                            <select className="form-select button " aria-label="Default select example" id="lugar" onChange={info}>
                                 <option selected>Lugar</option>
                                 <option value="1">CABA</option>
                                 <option value="2">Cordoba</option>
                                 <option value="3">Prov. Bs. As</option>
                             </select>
-                            <select className="form-select button " aria-label="Default select example" id="condicion" onChange={myNewFunction}>
+                            <select className="form-select button " aria-label="Default select example" id="condicion" onChange={info}>
                                 <option selected>Condicion</option>
                                 <option value="1">Alquiler</option>
                                 <option value="2">Venta</option>
                                 <option value="3">Permuta</option>
                             </select>
-                            <select className="form-select button " aria-label="Default select example" id="tipo" onChange={myNewFunction}>
+                            <select className="form-select button " aria-label="Default select example" id="tipo" onChange={info}>
                                 <option selected>Tipo</option>
                                 <option value="1">Casa</option>
                                 <option value="2">Terreno</option>
@@ -45,10 +52,8 @@ const Home = (props) => {
                     <img className="fondo" src="../../../img/home/Home.jpg" alt="" />
                 </div>
             </div>
-
             <div className="holder">
                 <div className="columnas">
-
                     <section className="bienvenidos">
                         <h2>Bienvenidos</h2>
                         <br />
@@ -75,9 +80,7 @@ const Home = (props) => {
                             </p>
                             <ReactPlayer url={('https://www.youtube.com/watch?v=4ZnYGLWVpXk')} />
                         </section>
-
                     </section>
-
                     <section className="testimonios">
                         <h2>Comentarios</h2>
                         <br />
@@ -90,23 +93,18 @@ const Home = (props) => {
                             <span className="cita">"Excelente iniciativa!"</span>
                             <span className="autor">Gaston</span>
                         </div>
-
                         <div>
                             <h3> El Array es: </h3> data ;
                         </div>
-
                     </section>
                 </div>
             </div>
-
         </main>
     );
 }
 
 
-
-export default { Home, myNewFunction }
-
+export default Home;
 
 
 

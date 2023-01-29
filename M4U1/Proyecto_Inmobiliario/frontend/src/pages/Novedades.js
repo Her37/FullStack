@@ -1,42 +1,39 @@
 import React from 'react';
+import { useState, useEffect } from 'react';
+import axios from 'axios';
+import NovedadItem from '../componentes/novedades/NovedadItem';
+
 
 const Novedades = (props) => {
+
+    const [loading, setLoading] = useState(false);
+    const [novedades, setNovedades] = useState([]);
+
+    useEffect(() => {
+        const cargaNovedades = async () => {
+            setLoading(true);
+            const response = await axios.get('http://localhost:3000/api/novedades');
+            setNovedades(response.data);
+            setLoading(false);
+        };
+        cargaNovedades();
+    }, []);
+
+
     return (
         <main className="holder">
 
-            <h2>NOVEDADES</h2>
-            <br />
-            <div className="novedades">
-                <h3>Titulo</h3>
-                <br />
-                <h4>Subtitulo</h4>
-                <br />
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, deserunt quae aspernatur laborum officia
-                    cumque quia quidem fugiat necessitatibus iusto excepturi quo placeat rerum! Inventore ab sed velit
-                    praesentium expedita?</p>
-                <hr />
-                <br />
-                <h3>Titulo</h3>
-                <br />
-                <h4>Subtitulo</h4>
-                <br />
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, deserunt quae aspernatur laborum officia
-                    cumque quia quidem fugiat necessitatibus iusto excepturi quo placeat rerum! Inventore ab sed velit
-                    praesentium expedita?</p>
-                <hr />
-                <br />
-                <h3>Titulo</h3>
-                <br />
-                <h4>Subtitulo</h4>
-                <br />
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, deserunt quae aspernatur laborum officia
-                    cumque quia quidem fugiat necessitatibus iusto excepturi quo placeat rerum! Inventore ab sed velit
-                    praesentium expedita?</p>
-                <hr />
-                <br />
-            </div>
-        </main>
+            <h1>NOVEDADES</h1>
 
+            {loading ? (
+                <p>Cargando...</p>
+            ) : (
+                novedades.map(item => <NovedadItem key={item.id}
+                    title={item.titulo} subtitle={item.subtitulo}
+                    imagen={item.imagen} body={item.cuerpo} />)
+            )}
+            
+        </main>
     );
 };
 
