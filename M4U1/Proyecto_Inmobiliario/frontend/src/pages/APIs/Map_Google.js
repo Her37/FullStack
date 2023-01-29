@@ -1,26 +1,27 @@
-import { useMemo } from "react";
+// import { useMemo } from "react";
 import '../APIs/Mapa.css';
-import { GoogleMap, useLoadScript, Marker } from "@react-google-maps/api";
+import { GoogleMap, useLoadScript } from "@react-google-maps/api";
 
 export default function () {
     const { isLoaded } = useLoadScript({
         googleMapsApiKey: "AIzaSyBQ1l7ysMKwT7-sszDO76V2IDiNxvRdrSU",
     });
-
     if (!isLoaded) return <div>Loading..</div>;
     return <GMapContainer />;
 }
 
 function GMapContainer() {
     return (
-        <div  id="map"  style={{height: "500px", width: "800px"}}>
+        <div id="map-container">
             <GMap />
         </div>
     )
 };
 
-function GMap() {
+export function GMap() {
     return (
-        <GoogleMap zoom={10} center={{ lat: 44, lng: -80 }} style={{height: "100%", width: "100%"}}/>
+        <GoogleMap zoom={10} center={{ lat: -34.6, lng: -58.4 }}>
+            <div id="map"></div>
+        </GoogleMap>
     )
 };

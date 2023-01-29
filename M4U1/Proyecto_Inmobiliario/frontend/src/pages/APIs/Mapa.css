@@ -1,8 +1,20 @@
+#map-container {
+    position: absolute;
+    height: 500px;
+    width: 800px;
+    margin: 100px;
+    display:  flex;
+
+
+}
+
 #map {
-    height: 100%;
     position: relative;
     z-index: -1;
-    margin: 100px;
-    padding: 0px;
-    background-color: rgb(130, 130, 160);
+    height: 500px;
+    width: 800px;
+    margin: auto;
+    top: 100px;
+    
+
 }

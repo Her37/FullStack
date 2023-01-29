@@ -1,47 +1,88 @@
 import React from 'react';
 import '../styles/home.css';
 import ReactPlayer from 'react-player';
-import { Selection } from './Galeria'
-import { useState } from "react";
+// import ReactDOM from "react-dom";
+// import ChildComponent from "./Galeria";
+
+
+// class Filtro extends React.Component {
+
+//     state = {
+//         dato: "Hola"
+//     };
+//     updateData = () => {
+//         this.setState({ sharedData: "New Data" });
+//     }
+
+//     render() {
+//         return (
+//             <div>
+//                 <ChildComponent info={this.state.dato} />
+//                 <button onClick={this.updateData}>Update</button>
+//             </div>
+//         );
+
+//     }
+// };
+
+// ReactDOM.render(<Filtro />, document.getElementById("root"));
+
+// function Selection() {
+
+
+// const lugar = document.getElementById('lugar').value;
+// const condicion = document.getElementById('condicion').value;
+// const tipo = document.getElementById('tipo').value;
+// const data = [tipo, condicion, lugar];
+
+//     console.log(data);
+//     Setdato(data);
+
+
+//     const [dato, Setdato] = useState({});
+
+//     const desencadenador = (event) =>{
+//         e.preventDefault();
+//         fetch('./Novedades',{
+//             method: 'POST',
+//             headers:{
+//                 'Content-Type': 'application/json',
+//             },
+//             body: JSON.stringify(dato),
+//         })
+
+//     }
+
+// };
+
+
 
 export const Home = (props) => {
 
-    const [dato, Setdato] = useState('');
-
-    var info = () => {
-        const lugar = document.getElementById('lugar').value;
-        const condicion = document.getElementById('condicion').value;
-        const tipo = document.getElementById('tipo').value;
-        const data = [tipo, condicion, lugar];
-        // console.log(data);
-        Setdato(data);
-    };
-
     return (
         <main>
-            <Selection
-                dato={dato}
-            />
+
             <div className="inicio">
+
                 <div className="sub_fondo">
                     <div id="caja">
-                        <form action='./Galeria' id="form" method=''>
-                            <input type="text" className="text" />
-                            <button type='submit' className="button" onClick={info}>BUSCAR</button>
+                        <form onSubmit={null} action='./Galeria' id="form" method='post'>
+                            {/* <input type="text" className="text" /> */}
+                            <button type='submit' className="button" onClick={null}>BUSCAR</button>
 
-                            <select className="form-select button " aria-label="Default select example" id="lugar" onChange={info}>
+                            <select className="form-select button " aria-label="Default select example" id="lugar" onChange={null}>
                                 <option selected>Lugar</option>
                                 <option value="1">CABA</option>
                                 <option value="2">Cordoba</option>
                                 <option value="3">Prov. Bs. As</option>
                             </select>
-                            <select className="form-select button " aria-label="Default select example" id="condicion" onChange={info}>
+                            <select className="form-select button " aria-label="Default select example" id="condicion" onChange={null}>
                                 <option selected>Condicion</option>
                                 <option value="1">Alquiler</option>
                                 <option value="2">Venta</option>
                                 <option value="3">Permuta</option>
                             </select>
-                            <select className="form-select button " aria-label="Default select example" id="tipo" onChange={info}>
+                            <select className="form-select button " aria-label="Default select example" id="tipo" onChange={null}>
                                 <option selected>Tipo</option>
                                 <option value="1">Casa</option>
                                 <option value="2">Terreno</option>
@@ -93,9 +134,6 @@ export const Home = (props) => {
                             <span className="cita">"Excelente iniciativa!"</span>
                             <span className="autor">Gaston</span>
                         </div>
-                        <div>
-                            <h3> El Array es: </h3> data ;
-                        </div>
                     </section>
                 </div>
             </div>
@@ -105,6 +143,5 @@ export const Home = (props) => {
 
 
 export default Home;
-
 
 

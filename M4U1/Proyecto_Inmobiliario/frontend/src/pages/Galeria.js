@@ -6,14 +6,12 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
 
-export function Selection(props) {
-
-
-}
-
+// export default function ChildComponent(props) {
+//   return (<p>{props.data}</p>);
+  
+// }
 
 export function Publicacion(props) {
-
   return (
     <ul id="elements-list" >
       <Container className="galeria">
@@ -22,6 +20,7 @@ export function Publicacion(props) {
             <Col>
               <h2>{props.condicion1}</h2>
               <p class="p">{props.descripcion1}</p>
+              <a href="/Map">VER UBICACION {props.lat}</a>
             </Col>
             <Col>
               <Carousel>
@@ -117,7 +116,7 @@ export function Publicacion(props) {
   );
 };
 
-// export default Publicacion;
+ export default Publicacion;
 
 // export const Galeria = (props) => {
 //   return (
