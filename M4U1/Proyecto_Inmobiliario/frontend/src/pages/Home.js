@@ -1,89 +1,48 @@
-import React from 'react';
+import React from "react";
 import '../styles/home.css';
 import ReactPlayer from 'react-player';
-// import ReactDOM from "react-dom";
-// import ChildComponent from "./Galeria";
+// import { useState } from 'react';
 
+export const Selection = (props) => {
+    // const [dato, Setdato] = useState([0]);
 
-// class Filtro extends React.Component {
+    const lugar = document.getElementById("lugar").value;
+    const condicion = document.getElementById('condicion').value;
+    const tipo = document.getElementById('tipo').value;
+    const data = [tipo, condicion, lugar];
+    console.log(data);
 
-//     state = {
-//         dato: "Hola"
-//     };
-//     updateData = () => {
-//         this.setState({ sharedData: "New Data" });
-//     }
+    // Setdato(data);
 
-//     render() {
-//         return (
-//             <div>
-//                 <ChildComponent info={this.state.dato} />
-//                 <button onClick={this.updateData}>Update</button>
-//             </div>
-//         );
-
-//     }
-// };
-
-// ReactDOM.render(<Filtro />, document.getElementById("root"));
-
-// function Selection() {
-
-
-// const lugar = document.getElementById('lugar').value;
-// const condicion = document.getElementById('condicion').value;
-// const tipo = document.getElementById('tipo').value;
-// const data = [tipo, condicion, lugar];
-
-//     console.log(data);
-//     Setdato(data);
-
-
-//     const [dato, Setdato] = useState({});
-
-//     const desencadenador = (event) =>{
-//         e.preventDefault();
-//         fetch('./Novedades',{
-//             method: 'POST',
-//             headers:{
-//                 'Content-Type': 'application/json',
-//             },
-//             body: JSON.stringify(dato),
-//         })
-
-//     }
-
-// };
-
-
+    return <p>Este es el dato: {data}</p>
+};
 
 export const Home = (props) => {
 
     return (
         <main>
-
             <div className="inicio">
 
                 <div className="sub_fondo">
-                    <div id="caja">
-                        <form onSubmit={null} action='./Galeria' id="form" method='post'>
-                            {/* <input type="text" className="text" /> */}
-                            <button type='submit' className="button" onClick={null}>BUSCAR</button>
 
-                            <select className="form-select button " aria-label="Default select example" id="lugar" onChange={null}>
-                                <option selected>Lugar</option>
-                                <option value="1">CABA</option>
+                    <div id="caja">
+             
+                        <form action='./Galeria' id="form" method=''>
+                            <button type='submit' className="button" onClick={null}>BUSCAR</button>
+                            <select className="form-select button " aria-label="Default select example" id="lugar" onChange={Selection}>
+                                <option>Lugar</option>
+                                <option value="1" >CABA</option>
                                 <option value="2">Cordoba</option>
                                 <option value="3">Prov. Bs. As</option>
                             </select>
-                            <select className="form-select button " aria-label="Default select example" id="condicion" onChange={null}>
-                                <option selected>Condicion</option>
+                            <select className="form-select button " aria-label="Default select example" id="condicion" onChange={Selection}>
+                                <option>Condicion</option>
                                 <option value="1">Alquiler</option>
                                 <option value="2">Venta</option>
                                 <option value="3">Permuta</option>
                             </select>
-                            <select className="form-select button " aria-label="Default select example" id="tipo" onChange={null}>
-                                <option selected>Tipo</option>
+                            <select className="form-select button " aria-label="Default select example" id="tipo" onChange={Selection}>
+                                <option>Tipo</option>
                                 <option value="1">Casa</option>
                                 <option value="2">Terreno</option>
                                 <option value="3">Departamento</option>
@@ -140,7 +99,6 @@ export const Home = (props) => {
         </main>
     );
 }
-
 
 export default Home;
 

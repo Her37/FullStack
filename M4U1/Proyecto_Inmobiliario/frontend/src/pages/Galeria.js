@@ -4,16 +4,16 @@ import Carousel from "react-bootstrap/Carousel";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import { Selection } from "./Home";
 
-
-// export default function ChildComponent(props) {
-//   return (<p>{props.data}</p>);
-  
-// }
 
 export function Publicacion(props) {
+
   return (
     <ul id="elements-list" >
+
+< Selection />
+
       <Container className="galeria">
         <li>1
           <Row>
@@ -116,7 +116,7 @@ export function Publicacion(props) {
   );
 };
 
- export default Publicacion;
+export default Publicacion;
 
 // export const Galeria = (props) => {
 //   return (
