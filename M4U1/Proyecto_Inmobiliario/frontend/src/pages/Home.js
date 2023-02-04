@@ -1,4 +1,4 @@
-import { React, useState } from "react";
+import React from "react";
 import '../styles/home.css';
 import ReactPlayer from 'react-player';
 
@@ -8,9 +8,7 @@ export const Home = (props) => {
     return (
         <main>
             <div className="inicio">
-
                 <div className="sub_fondo">
-
                     <div id="caja">
                         <form action="/Galeria" id="form" method=''>
                             <button type='submit' className="button" onClick={null}>BUSCAR</button>

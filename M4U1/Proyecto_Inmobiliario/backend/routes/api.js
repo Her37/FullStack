@@ -37,12 +37,12 @@ router.post('/contacto', async (req, res) => {
         Ademas, hizo el siguiente comentario: ${req.body.mensaje}<br> Su tel es: ${req.body.telefono}`
     }
 
-    const imbobiliaria = nodemailer.createTestAccount({
+    var imbobiliaria = nodemailer.createTestAccount({
         host: process.env.SMTP_HOST,
         port: process.env.SMTP_PORT,
         auth: {
             user: process.env.SMTP_USER,
-            pass:process.env.SMTP_PASS
+            pass: process.env.SMTP_PASS
 
         }
     });
