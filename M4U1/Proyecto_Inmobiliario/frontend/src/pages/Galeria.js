@@ -4,30 +4,31 @@ import Carousel from "react-bootstrap/Carousel";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import { Selection } from "./Home";
 
 
-export function Publicacion(props) {
+
+
+export const Publicacion = (props) => {
 
   return (
     <ul id="elements-list" >
-
-< Selection />
 
       <Container className="galeria">
         <li>1
           <Row>
             <Col>
               <h2>{props.condicion1}</h2>
-              <p class="p">{props.descripcion1}</p>
-              <a href="/Map">VER UBICACION {props.lat}</a>
+              <p class="p">{props.encabezado}</p>
+              <p>{props.subtitulo}</p>
+              <p><b>PRECIO: {props.precio}</b></p>
+              <a href="/Map">VER</a>
             </Col>
             <Col>
               <Carousel>
                 <Carousel.Item>
                   <img
                     className="d-block w-100, carrusel"
-                    src={require(`/public/img/galeria/terreno2/imagen-${props.imagen1}.jpg`)}
+                    src={require(`/public/img/galeria/Depto_JJ_300/imagen${props.imagen3}.jpeg`)}
                     alt="Primera Foto"
                   />
                   <Carousel.Caption>
@@ -39,7 +40,7 @@ export function Publicacion(props) {
                 <Carousel.Item>
                   <img
                     className="d-block w-100, carrusel"
-                    src={require(`/public/img/galeria/terreno2/imagen-${props.imagen2}.jpg`)}
+                    src={require(`/public/img/galeria/Depto_JJ_300/imagen${props.imagen2}.jpeg`)}
                     alt="Second slide"
                   />
                   <Carousel.Caption>
@@ -49,7 +50,7 @@ export function Publicacion(props) {
                 <Carousel.Item>
                   <img
                     className="d-block w-100, carrusel"
-                    src={require(`/public/img/galeria/terreno2/imagen-${props.imagen3}.jpg`)}
+                    src={require(`/public/img/galeria/Depto_JJ_300/imagen${props.imagen4}.jpeg`)}
                     alt="Third slide"
                   />
                   <Carousel.Caption>
