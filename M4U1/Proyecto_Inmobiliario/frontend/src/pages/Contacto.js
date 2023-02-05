@@ -20,7 +20,6 @@ const Contacto = (props) => {
         setFormData(oldData => ({
             ...oldData,
             [name]: value
-
         }));
     }
 

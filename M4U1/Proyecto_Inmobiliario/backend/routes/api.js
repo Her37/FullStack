@@ -29,7 +29,6 @@ router.get('/novedades', async function (req, res, next) {
 });
 
 router.post('/contacto', async (req, res) => {
-
     const mail = {
         to: 'carrizohf35@gmail.com',
         subject: 'Contacto Web',
@@ -37,13 +36,12 @@ router.post('/contacto', async (req, res) => {
         Ademas, hizo el siguiente comentario: ${req.body.mensaje}<br> Su tel es: ${req.body.telefono}`
     }
 
-    var imbobiliaria = nodemailer.createTestAccount({
+    const imbobiliaria = nodemailer.createTransport({
         host: process.env.SMTP_HOST,
         port: process.env.SMTP_PORT,
         auth: {
             user: process.env.SMTP_USER,
             pass: process.env.SMTP_PASS
-
         }
     });
 
@@ -53,6 +51,6 @@ router.post('/contacto', async (req, res) => {
         error: false,
         message: 'Mensaje enviado'
     });
-})
+});
 
 module.exports = router;
