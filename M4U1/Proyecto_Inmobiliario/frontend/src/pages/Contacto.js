@@ -22,9 +22,9 @@ const Contacto = (props) => {
             [name]: value
         }));
     }
-
+    
     const handleSubmit = async e => {
-        e.preventDefaul();
+        e.preventDefault();
         setMsg('');
         setSending(true)
         const response = await axios.post('http://localhost:3000/api/contacto', formData);
