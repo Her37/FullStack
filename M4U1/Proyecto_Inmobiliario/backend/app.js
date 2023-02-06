@@ -29,7 +29,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 app.use(session({
-  secret: 'Endimion_30',
+  secret: 'ContraseniadePrueba',
   resave: false,
   saveUninitializade: true
 }));
