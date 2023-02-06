@@ -76,18 +76,6 @@
 
 }
 
-#form {
-  width: max-content;
-  display: flex;
-  flex-direction: row-reverse;
-  padding: 15px;
-  background-color: white;
-  border-radius: 97px 96px 96px 95px;
-  background-color: white;
-  background:local;
-
-}
-
 #botonera {
   width: max-content;
   display: flex;
@@ -99,8 +87,6 @@
   background:local;
 
 }
-
-
 
 .text {
   margin: 10px;

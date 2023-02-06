@@ -12,7 +12,9 @@ export const productos = [
     fotos: 'JJ368',
     imagen1: '1',
     imagen2: '2',
-    imagen3: '3'
+    imagen3: '3',
+    lat:'-34.6',
+    lng:'-58.4'
   },
   {
     direccion: "Calle Ochoa 2024",
@@ -27,7 +29,9 @@ export const productos = [
     fotos: 'terreno1',
     imagen1: '12',
     imagen2: '22',
-    imagen3: '32'
+    imagen3: '32',
+    lat:'-34.6',
+    lng:'-58.4'
   },
   {
     direccion: "Calchaqui 500",
@@ -42,7 +46,9 @@ export const productos = [
     fotos: 'terreno2',
     imagen1: '13',
     imagen2: '23',
-    imagen3: '33'
+    imagen3: '33',
+    lat:'-34.6',
+    lng:'-58.4'
   },
   {
     direccion: "Av. Viamonte 561",
@@ -57,6 +63,8 @@ export const productos = [
     fotos: 'Viamonte531',
     imagen1: '14',
     imagen2: '24',
-    imagen3: '34'
+    imagen3: '34',
+    lat:'-34.6',
+    lng:'-58.4'
   }
 ];

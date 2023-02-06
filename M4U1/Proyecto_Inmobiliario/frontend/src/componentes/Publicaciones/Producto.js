@@ -1,13 +1,49 @@
-import React from "react";
+import React, { useState } from "react";
 import "../../styles/galeria.css";
 import Carousel from "react-bootstrap/Carousel";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import Accordion from 'react-bootstrap/Accordion';
+import { useAccordionButton } from 'react-bootstrap/AccordionButton';
+import Card from 'react-bootstrap/Card';
+import Mapa from '../../pages/APIs/Map_Google';
+
 
 const Producto = (props) => {
-    return (
 
+    function CustomToggle({ children, eventKey }) {
+        const decoratedOnClick = useAccordionButton(eventKey, () =>
+          console.log('totally custom!'),
+        );
+        return (
+          <button
+            type="button"
+            style={{ backgroundColor: '' }}
+            onClick={decoratedOnClick}
+          >
+            {children}
+          </button>
+        );
+      }
+      
+      function Example() {
+        return (
+          <Accordion defaultActiveKey="0">
+            <Card>
+              <Card.Header>
+                <CustomToggle eventKey="1">Ver Mapa</CustomToggle>
+              </Card.Header>
+              <Accordion.Collapse eventKey="1">
+                <Card.Body>  {Mapa(parseFloat(props.producto.lat), parseFloat(props.producto.lng))} </Card.Body>
+              </Accordion.Collapse>
+            </Card>
+          </Accordion>
+        );
+      }
+      
+
+    return (
         <Container className="galeria">
             <Row>
                 <Col>
@@ -20,7 +56,6 @@ const Producto = (props) => {
                         <p>Dormitorios: {props.producto.dormitorios}</p>
                         <p>M2 Totales: {props.producto.superficie}</p>
                         <p><b>PRECIO: {props.producto.precio}</b></p>
-                        <a href="/Map">VER</a>
                     </div>
                 </Col>
                 <Col>
@@ -63,8 +98,11 @@ const Producto = (props) => {
                     </Carousel>
                 </Col>
             </Row>
+            <Row>
+            <Example />
+               
+            </Row>
         </Container>
-
     );
 };
 

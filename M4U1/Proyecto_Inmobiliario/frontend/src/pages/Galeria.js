@@ -35,7 +35,7 @@ const Productos = () => {
 
       {productosFiltrados.length > 0 ? (
         productosFiltrados.map((producto) => <Producto producto={producto} />)
-      ) : (<p>No se encontraron productos</p>)}
+      ) : (<h3>No se encontraron productos</h3>)}
     </div>
   );
 };
