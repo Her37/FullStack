@@ -7,8 +7,7 @@ import Col from "react-bootstrap/Col";
 import Accordion from 'react-bootstrap/Accordion';
 import { useAccordionButton } from 'react-bootstrap/AccordionButton';
 import Card from 'react-bootstrap/Card';
-import Mapa from '../../pages/APIs/Map_Google';
-
+import Map from '../../pages/APIs/Map_Google';
 
 const Producto = (props) => {
 
@@ -17,9 +16,8 @@ const Producto = (props) => {
           console.log('totally custom!'),
         );
         return (
-          <button
+          <button className="boton"
             type="button"
-            style={{ backgroundColor: '' }}
             onClick={decoratedOnClick}
           >
             {children}
@@ -27,7 +25,7 @@ const Producto = (props) => {
         );
       }
       
-      function Example() {
+      function Mapa() {
         return (
           <Accordion defaultActiveKey="0">
             <Card>
@@ -35,13 +33,12 @@ const Producto = (props) => {
                 <CustomToggle eventKey="1">Ver Mapa</CustomToggle>
               </Card.Header>
               <Accordion.Collapse eventKey="1">
-                <Card.Body>  {Mapa(parseFloat(props.producto.lat), parseFloat(props.producto.lng))} </Card.Body>
+                <Card.Body>  {Map(parseFloat(props.producto.lat), parseFloat(props.producto.lng))} </Card.Body>
               </Accordion.Collapse>
             </Card>
           </Accordion>
         );
       }
-      
 
     return (
         <Container className="galeria">
@@ -99,8 +96,7 @@ const Producto = (props) => {
                 </Col>
             </Row>
             <Row>
-            <Example />
-               
+            <Mapa />               
             </Row>
         </Container>
     );

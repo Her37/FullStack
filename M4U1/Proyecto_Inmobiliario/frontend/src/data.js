@@ -13,11 +13,10 @@ export const productos = [
     imagen1: '1',
     imagen2: '2',
     imagen3: '3',
-    lat:'-34.6',
-    lng:'-58.4'
+
   },
   {
-    direccion: "Calle Ochoa 2024",
+    direccion: "Villa Cerro Azul, Córdoba",
     lugar: "Cordoba",
     condicion: "Alquiler",
     tipo: "Terreno",
@@ -30,11 +29,11 @@ export const productos = [
     imagen1: '12',
     imagen2: '22',
     imagen3: '32',
-    lat:'-34.6',
-    lng:'-58.4'
+    lat:'-31.116860730533386',
+    lng:'-64.48972481369371'
   },
   {
-    direccion: "Calchaqui 500",
+    direccion: "Davinci, Valle Hermoso 412",
     lugar: "Cordoba",
     condicion: "Alquiler",
     tipo: "Terreno",
@@ -47,8 +46,8 @@ export const productos = [
     imagen1: '13',
     imagen2: '23',
     imagen3: '33',
-    lat:'-34.6',
-    lng:'-58.4'
+    lat:'-31.070916000937576',
+    lng:'-64.31831873125671'
   },
   {
     direccion: "Av. Viamonte 561",
@@ -64,7 +63,8 @@ export const productos = [
     imagen1: '14',
     imagen2: '24',
     imagen3: '34',
-    lat:'-34.6',
-    lng:'-58.4'
+    lat:'-34.70078479163374',
+    lng:'-58.401788871255754'
+   
   }
 ];
