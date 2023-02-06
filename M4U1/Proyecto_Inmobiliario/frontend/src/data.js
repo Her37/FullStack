@@ -1,0 +1,62 @@
+export const productos = [
+  {
+    direccion: 'Jean Jaures 368, Piso 3',
+    lugar: "Capital Federal",
+    condicion: 'Venta',
+    tipo: "Departamento",
+    descripcion: "Departamento en Venta en Abasto, Capital Federal",
+    ambientes: "2",
+    dormitorios: "1",
+    superficie: "30",
+    precio: "USD 45.000",
+    fotos: 'JJ368',
+    imagen1: '1',
+    imagen2: '2',
+    imagen3: '3'
+  },
+  {
+    direccion: "Calle Ochoa 2024",
+    lugar: "Cordoba",
+    condicion: "Alquiler",
+    tipo: "Terreno",
+    descripcion: "Excelente Terreno en la Falfa, Cordoba",
+    ambientes: "",
+    dormitorios: "",
+    superficie: "300",
+    precio: "USD 15.000",
+    fotos: 'terreno1',
+    imagen1: '12',
+    imagen2: '22',
+    imagen3: '32'
+  },
+  {
+    direccion: "Calchaqui 500",
+    lugar: "Cordoba",
+    condicion: "Alquiler",
+    tipo: "Terreno",
+    descripcion: "Excelente Terreno en la Rio Cuarto, Cordoba",
+    ambientes: "",
+    dormitorios: "",
+    superficie: "250",
+    precio: "USD 10.000",
+    fotos: 'terreno2',
+    imagen1: '13',
+    imagen2: '23',
+    imagen3: '33'
+  },
+  {
+    direccion: "Av. Viamonte 561",
+    lugar: "Lanus",
+    condicion: "Venta",
+    tipo: "Casa",
+    descripcion: "Departamento en Venta en Abasto, Capital Federal",
+    ambientes: "2",
+    dormitorios: "1",
+    superficie: "30",
+    precio: "USD 80.000",
+    fotos: 'Viamonte531',
+    imagen1: '14',
+    imagen2: '24',
+    imagen3: '34'
+  }
+];

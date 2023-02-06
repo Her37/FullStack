@@ -1,6 +1,7 @@
-import React from "react";
 import '../styles/home.css';
 import ReactPlayer from 'react-player';
+import React from "react";
+import Filtro from '../componentes/Filtro';
 
 
 export const Home = (props) => {
@@ -9,29 +10,7 @@ export const Home = (props) => {
         <main>
             <div className="inicio">
                 <div className="sub_fondo">
-                    <div id="caja">
-                        <form action="/Galeria" id="form" method=''>
-                            <button type='submit' className="button" onClick={null}>BUSCAR</button>
-                            <select className="form-select button " aria-label="Default select example" id="lugar" onChange={null}>
-                                <option>Lugar</option>
-                                <option value="1" >CABA</option>
-                                <option value="2">Cordoba</option>
-                                <option value="3">Prov. Bs. As</option>
-                            </select>
-                            <select className="form-select button " aria-label="Default select example" id="condicion" onChange={null}>
-                                <option>Condicion</option>
-                                <option value="1">Alquiler</option>
-                                <option value="2">Venta</option>
-                                <option value="3">Permuta</option>
-                            </select>
-                            <select className="form-select button " aria-label="Default select example" id="tipo" onChange={null}>
-                                <option>Tipo</option>
-                                <option value="1">Casa</option>
-                                <option value="2">Terreno</option>
-                                <option value="3">Departamento</option>
-                            </select>
-                        </form>
-                    </div>
+                    <Filtro />
                     <img className="fondo" src="../../../img/home/Home.jpg" alt="" />
                 </div>
             </div>
@@ -79,6 +58,7 @@ export const Home = (props) => {
                     </section>
                 </div>
             </div>
+
         </main>
     );
 }

@@ -1,123 +1,182 @@
-import React from "react";
-import "../styles/galeria.css";
-import Carousel from "react-bootstrap/Carousel";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import { useSearchParams } from "react-router-dom";
+import { productos } from "../data";
+import Producto from "../componentes/Publicaciones/Producto";
+// import Filtro from "../componentes/Filtro";
 
+const Productos = () => {
+  const [searchParams, setSearchParams] = useSearchParams();
 
+  let productosFiltrados = productos;
 
+  const lugar = searchParams.get("lugar");
+  if (lugar) {
+    productosFiltrados = productosFiltrados.filter(
+      (producto) => producto.lugar === lugar
+    );
+  }
 
-export const Publicacion = (props) => {
+  const condicion = searchParams.get("condicion");
+  if (condicion) {
+    productosFiltrados = productosFiltrados.filter(
+      (producto) => producto.condicion === condicion
+    );
+  }
+
+  const tipo = searchParams.get("tipo");
+  if (tipo) {
+    productosFiltrados = productosFiltrados.filter(
+      (producto) => producto.tipo === tipo
+    );
+  }
 
   return (
-    <ul id="elements-list" >
+    <div>
+      {/* <Filtro lugar={lugar} condicion={condicion} tipo={tipo} /> */}
 
-      <Container className="galeria">
-        <li>1
-          <Row>
-            <Col>
-              <h2>{props.condicion1}</h2>
-              <p class="p">{props.encabezado}</p>
-              <p>{props.subtitulo}</p>
-              <p><b>PRECIO: {props.precio}</b></p>
-              <a href="/Map">VER</a>
-            </Col>
-            <Col>
-              <Carousel>
-                <Carousel.Item>
-                  <img
-                    className="d-block w-100, carrusel"
-                    src={require(`/public/img/galeria/Depto_JJ_300/imagen${props.imagen3}.jpeg`)}
-                    alt="Primera Foto"
-                  />
-                  <Carousel.Caption>
-                    <p>
-                      Nulla vitae elit libero, a pharetra augue mollis interdum.
-                    </p>
-                  </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                  <img
-                    className="d-block w-100, carrusel"
-                    src={require(`/public/img/galeria/Depto_JJ_300/imagen${props.imagen2}.jpeg`)}
-                    alt="Second slide"
-                  />
-                  <Carousel.Caption>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                  </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                  <img
-                    className="d-block w-100, carrusel"
-                    src={require(`/public/img/galeria/Depto_JJ_300/imagen${props.imagen4}.jpeg`)}
-                    alt="Third slide"
-                  />
-                  <Carousel.Caption>
-                    <p>
-                      Praesent commodo cursus magna, vel scelerisque nisl
-                      consectetur.
-                    </p>
-                  </Carousel.Caption>
-                </Carousel.Item>
-              </Carousel>
-            </Col>
-          </Row>
-        </li>
-        <li>2
-          <Row>
-            <Col>
-              <h2>{props.condicion2}</h2>
-              <p class="p">{props.descripcion2}</p>
-            </Col>
-            <Col>
-              <Carousel>
-                <Carousel.Item>
-                  <img
-                    className="d-block w-100, carrusel"
-                    src={require(`/public/img/galeria/terreno1/imagen-${props.imagen11}.jpg`)}
-                    alt="Primera Foto"
-                  />
-                  <Carousel.Caption>
-                    <p>
-                      Nulla vitae elit libero, a pharetra augue mollis interdum.
-                    </p>
-                  </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                  <img
-                    className="d-block w-100, carrusel"
-                    src={require(`/public/img/galeria/terreno1/imagen-${props.imagen21}.jpg`)}
-                    alt="Second slide"
-                  />
-                  <Carousel.Caption>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                  </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                  <img
-                    className="d-block w-100, carrusel"
-                    src={require(`/public/img/galeria/terreno1/imagen-${props.imagen31}.jpg`)}
-                    alt="Third slide"
-                  />
-                  <Carousel.Caption>
-                    <p>
-                      Praesent commodo cursus magna, vel scelerisque nisl
-                      consectetur.
-                    </p>
-                  </Carousel.Caption>
-                </Carousel.Item>
-              </Carousel>
-            </Col>
-          </Row>
-        </li>
-
-      </Container>
-    </ul>
+      {productosFiltrados.length > 0 ? (
+        productosFiltrados.map((producto) => <Producto producto={producto} />)
+      ) : (<p>No se encontraron productos</p>)}
+    </div>
   );
 };
 
-export default Publicacion;
+export default Productos;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import React from "react";
+// import "../styles/galeria.css";
+// import Carousel from "react-bootstrap/Carousel";
+// import Container from "react-bootstrap/Container";
+// import Row from "react-bootstrap/Row";
+// import Col from "react-bootstrap/Col";
+
+// export const Publicacion = (props) => {
+
+//   return (
+//     <ul id="elements-list" >
+
+//       <Container className="galeria">
+//         <li>1
+//           <Row>
+//             <Col>
+//             <div>
+//               <h2>{props.condicion1} </h2>
+//               <p class="p">{props.encabezado}</p>
+//               <p>{props.subtitulo}</p>
+//               <p>Ambientes: {props.ambientes} </p>
+//               <p>Dormitorios: {props.dormitorios}</p>
+//               <p>M2 Totales: {props.superficie}</p>
+//               <p><b>PRECIO: {props.precio}</b></p>
+//               <a href="/Map">VER</a>
+//               </div>
+//             </Col>
+//             <Col>
+//               <Carousel>
+//                 <Carousel.Item>
+//                   <img
+//                     className="d-block w-100, carrusel"
+//                     src={require(`/public/img/galeria/Depto_JJ_300/imagen${props.imagen3}.jpeg`)}
+//                     alt="Primera Foto"
+//                   />
+//                   <Carousel.Caption>
+//                     <p>
+//                       Nulla vitae elit libero, a pharetra augue mollis interdum.
+//                     </p>
+//                   </Carousel.Caption>
+//                 </Carousel.Item>
+//                 <Carousel.Item>
+//                   <img
+//                     className="d-block w-100, carrusel"
+//                     src={require(`/public/img/galeria/Depto_JJ_300/imagen${props.imagen2}.jpeg`)}
+//                     alt="Second slide"
+//                   />
+//                   <Carousel.Caption>
+//                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+//                   </Carousel.Caption>
+//                 </Carousel.Item>
+//                 <Carousel.Item>
+//                   <img
+//                     className="d-block w-100, carrusel"
+//                     src={require(`/public/img/galeria/Depto_JJ_300/imagen${props.imagen4}.jpeg`)}
+//                     alt="Third slide"
+//                   />
+//                   <Carousel.Caption>
+//                     <p>
+//                       Praesent commodo cursus magna, vel scelerisque nisl
+//                       consectetur.
+//                     </p>
+//                   </Carousel.Caption>
+//                 </Carousel.Item>
+//               </Carousel>
+//             </Col>
+//           </Row>
+//         </li>
+//         <li>2
+//           <Row>
+//             <Col>
+//               <h2>{props.condicion2}</h2>
+//               <p class="p">{props.descripcion2}</p>
+//             </Col>
+//             <Col>
+//               <Carousel>
+//                 <Carousel.Item>
+//                   <img
+//                     className="d-block w-100, carrusel"
+//                     src={require(`/public/img/galeria/terreno1/imagen-${props.imagen11}.jpg`)}
+//                     alt="Primera Foto"
+//                   />
+//                   <Carousel.Caption>
+//                     <p>
+//                       Nulla vitae elit libero, a pharetra augue mollis interdum.
+//                     </p>
+//                   </Carousel.Caption>
+//                 </Carousel.Item>
+//                 <Carousel.Item>
+//                   <img
+//                     className="d-block w-100, carrusel"
+//                     src={require(`/public/img/galeria/terreno1/imagen-${props.imagen21}.jpg`)}
+//                     alt="Second slide"
+//                   />
+//                   <Carousel.Caption>
+//                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+//                   </Carousel.Caption>
+//                 </Carousel.Item>
+//                 <Carousel.Item>
+//                   <img
+//                     className="d-block w-100, carrusel"
+//                     src={require(`/public/img/galeria/terreno1/imagen-${props.imagen31}.jpg`)}
+//                     alt="Third slide"
+//                   />
+//                   <Carousel.Caption>
+//                     <p>
+//                       Praesent commodo cursus magna, vel scelerisque nisl
+//                       consectetur.
+//                     </p>
+//                   </Carousel.Caption>
+//                 </Carousel.Item>
+//               </Carousel>
+//             </Col>
+//           </Row>
+//         </li>
+
+//       </Container>
+//     </ul>
+//   );
+// };
+
+// export default Publicacion;
 
 // export const Galeria = (props) => {
 //   return (
